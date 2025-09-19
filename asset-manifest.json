@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/walknwag.github.io/static/css/main.c8290a51.css",
+    "main.js": "/walknwag.github.io/static/js/main.32398ee1.js",
+    "static/js/453.584da90e.chunk.js": "/walknwag.github.io/static/js/453.584da90e.chunk.js",
+    "index.html": "/walknwag.github.io/index.html",
+    "main.c8290a51.css.map": "/walknwag.github.io/static/css/main.c8290a51.css.map",
+    "main.32398ee1.js.map": "/walknwag.github.io/static/js/main.32398ee1.js.map",
+    "453.584da90e.chunk.js.map": "/walknwag.github.io/static/js/453.584da90e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8290a51.css",
+    "static/js/main.32398ee1.js"
+  ]
+}

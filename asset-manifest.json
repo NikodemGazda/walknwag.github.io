@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/walknwag.github.io/static/css/main.c8290a51.css",
-    "main.js": "/walknwag.github.io/static/js/main.e0aba016.js",
+    "main.css": "/walknwag.github.io/static/css/main.0829381d.css",
+    "main.js": "/walknwag.github.io/static/js/main.435c4271.js",
     "static/js/453.584da90e.chunk.js": "/walknwag.github.io/static/js/453.584da90e.chunk.js",
     "index.html": "/walknwag.github.io/index.html",
-    "main.c8290a51.css.map": "/walknwag.github.io/static/css/main.c8290a51.css.map",
-    "main.e0aba016.js.map": "/walknwag.github.io/static/js/main.e0aba016.js.map",
+    "main.0829381d.css.map": "/walknwag.github.io/static/css/main.0829381d.css.map",
+    "main.435c4271.js.map": "/walknwag.github.io/static/js/main.435c4271.js.map",
     "453.584da90e.chunk.js.map": "/walknwag.github.io/static/js/453.584da90e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8290a51.css",
-    "static/js/main.e0aba016.js"
+    "static/css/main.0829381d.css",
+    "static/js/main.435c4271.js"
   ]
 }

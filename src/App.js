@@ -24,7 +24,7 @@ function App() {
       <header className="App-header">
         <div className="header-container">
           <div className="header-left">
-            <img src="/imgs/logo.jpg" alt="Walk 'N' Wag Logo"/>
+            <img src={`${process.env.PUBLIC_URL}/imgs/logo.png`} alt="Walk 'N' Wag Logo"/>
           </div>
           <div className="header-right">
             <h1>Walk 'N' Wag</h1>
@@ -85,7 +85,7 @@ function HomePage() {
             We provide loving care for your furry family members while you're away, making sure they get the exercise and attention they deserve.
           </p>
           <div className="hero-image-container">
-            <img src="/imgs/image.png" alt="Happy dogs" className="hero-image" />
+            <img src={`${process.env.PUBLIC_URL}/imgs/image.png`} alt="Happy dogs" className="hero-image" />
             <button className="cta-button" onClick={() => window.scrollTo(0, document.querySelector('.services-preview').offsetTop)}>
               Explore Our Services
             </button>
@@ -180,28 +180,28 @@ function HomePage() {
               <h3>🚨 Emergency Contacts</h3>
               <p>Got an emergency? Red Bank Veterinary Hospital are open 24/7, have AMAZING reviews, and they will take care of your furry friend right away!!!</p>
               <a href="https://www.redbankvet.com/?y_source=1_MjkzNDQyOTMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D" target="_blank" rel="noopener noreferrer" aria-label="Redbank Veterinary Hospital website">
-                <img src="/imgs/redlogo.png" alt="Redbank Vet Logo" className="contact-logo" />
+                <img src={`${process.env.PUBLIC_URL}/imgs/redlogo.png`} alt="Redbank Vet Logo" className="contact-logo" />
               </a>
             </div>
             <div className="resource-card">
               <h3>🚨 Emergency Contacts</h3>
               <p> At Urgent Paws Veterinary Clinic, they take care of your dog really well and treat your pets not like pets but like family!!!</p>
               <a href="https://urgentpawsnj.com/" target="_blank" rel="noopener noreferrer" aria-label="Urgent Paws website">
-                <img src="/imgs/urgntpws.png" alt="Urgent Paws Logo" className="contact-logo" />
+                <img src={`${process.env.PUBLIC_URL}/imgs/urgntpws.png`} alt="Urgent Paws Logo" className="contact-logo" />
               </a>
             </div>
             <div className="resource-card">
               <h3>🚨 Emergency Contacts</h3>
               <p>Or, if you see a struggling furry friend out on its own, contact animal rescue!</p>
               <a href="https://www.homefreeanimalrescue.com/" target="_blank" rel="noopener noreferrer" aria-label="Urgent Paws website">
-                <img src="/imgs/homefree.jpeg" alt="Urgent Paws Logo" className="contact-logo" />
+                <img src={`${process.env.PUBLIC_URL}/imgs/homefree.jpeg`} alt="Urgent Paws Logo" className="contact-logo" />
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Reviews Section */}
+      {/* Reviews Section
       <section className="reviews">
         <div className="container">
           <h2>What Our Customers Say</h2>
@@ -223,7 +223,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
@@ -246,19 +246,24 @@ function ServicesPage() {
             <p>Professional dog walking tailored to your pet's needs</p>
             <div className="service-options">
               <div className="option">
-                <h3>30-Minute Walk</h3>
-                <p>Perfect for smaller dogs or senior pets</p>
-                <span className="price">$25</span>
+                <h3>Small Dogs</h3>
+                <p>For pups around 24 lbs and less</p>
+                <span className="price">$10</span>
               </div>
               <div className="option">
-                <h3>60-Minute Walk</h3>
-                <p>Ideal for high-energy dogs</p>
-                <span className="price">$40</span>
+                <h3>Medium Dogs</h3>
+                <p>Great for dogs under 60 lbs!</p>
+                <span className="price">$12</span>
+              </div>
+              <div className="option">
+                <h3>Big Dogs</h3>
+                <p>Walk time for the big dogs!</p>
+                <span className="price">$15</span>
               </div>
             </div>
           </div>
 
-          <div className="service-detail-card">
+          {/* <div className="service-detail-card">
             <h2>🛁 Pet Bathing & Grooming</h2>
             <p>Keep your pet clean and comfortable</p>
             <div className="service-options">
@@ -273,7 +278,7 @@ function ServicesPage() {
                 <span className="price">$60</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="service-detail-card">
             <h2>🏠 Pet Sitting</h2>
@@ -281,13 +286,18 @@ function ServicesPage() {
             <div className="service-options">
               <div className="option">
                 <h3>Daily Visits</h3>
-                <p>30-minute check-ins</p>
-                <span className="price">$30/visit</span>
+                <p>60-min check-ins on your pup!</p>
+                <span className="price">$15/hour</span>
               </div>
               <div className="option">
-                <h3>Overnight Care</h3>
-                <p>Full overnight supervision</p>
-                <span className="price">$80/night</span>
+                <h3>Sit and Walk</h3>
+                <p>Pet sitting with a walk included!</p>
+                <span className="price">$20/hr</span>
+              </div>
+              <div className="option">
+                <h3>Sit and Dog Park Adventure!!!</h3>
+                <p>Pet sitting with dog park adventures!</p>
+                <span className="price">$25/hr</span>
               </div>
             </div>
           </div>
@@ -296,9 +306,8 @@ function ServicesPage() {
             <h3>Additional Information</h3>
             <ul>
               <li>Weekend services: +$5 surcharge</li>
-              <li>Holiday services: +$10 surcharge</li>
-              <li>Multiple pets: 50% off each additional pet</li>
-              <li>Emergency same-day service: +$15 surcharge</li>
+              <li>😢 Sorry, no holiday or overnight services</li>
+              <li>Let me know if your dog has an allergies!</li>
             </ul>
           </div>
         </div>
@@ -362,7 +371,7 @@ function AboutPage() {
               </ul>
             </div>
             <div className="about-image">
-              <img src="/imgs/logo.jpg" alt="Klara and Ania with dogs" />
+              <img src={`${process.env.PUBLIC_URL}/imgs/logo.jpg`} alt="Klara and Ania with dogs" />
             </div>
           </div>
         </div>
@@ -406,7 +415,7 @@ function ContactForm() {
     <section className="contact-form-section">
       <div className="container">
         <h2>Contact Us</h2>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form action="https://formspree.io/f/xpwypwje" method="POST" className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Your Name *</label>
             <input
@@ -463,7 +472,6 @@ function ContactForm() {
             >
               <option value="">Select a service</option>
               <option value="dog-walking">Dog Walking</option>
-              <option value="pet-bathing">Pet Bathing</option>
               <option value="pet-sitting">Pet Sitting</option>
               <option value="playtime">Playtime</option>
               <option value="other">Other</option>
@@ -498,29 +506,19 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Contact Information</h3>
-            <p>📧 walkandwag@email.com</p>
-            <p>📞 (555) 123-4567</p>
-            <p>📍 Your City, State</p>
+            <p>📧 klarabudny45@gmail.com</p>
+            <p>📍 Middletown Township, New Jersey</p>
           </div>
           
           <div className="footer-section">
             <h3>General Hours</h3>
             <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
-            <p>Saturday: 8:00 AM - 6:00 PM</p>
-            <p>Sunday: 9:00 AM - 5:00 PM</p>
-            <p><em>Emergency services available</em></p>
-          </div>
-          
-          <div className="footer-section">
-            <h3>Follow Us</h3>
-            <p>🐕 Instagram: @walkandwag</p>
-            <p>📘 Facebook: Walk 'N' Wag</p>
-            <p>🐦 Twitter: @walkandwag</p>
+            <p>Saturday & Sunday: 9:00 AM - 5:00 PM</p>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Walk 'N' Wag. All rights reserved. Made with ❤️ for dogs and their families.</p>
+          <p>&copy; 2025 Walk 'N' Wag. Made with ❤️ for dogs and their families.</p>
         </div>
       </div>
     </footer>

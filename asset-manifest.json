@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/walknwag.github.io/static/css/main.0829381d.css",
-    "main.js": "/walknwag.github.io/static/js/main.435c4271.js",
-    "static/js/453.584da90e.chunk.js": "/walknwag.github.io/static/js/453.584da90e.chunk.js",
-    "index.html": "/walknwag.github.io/index.html",
-    "main.0829381d.css.map": "/walknwag.github.io/static/css/main.0829381d.css.map",
-    "main.435c4271.js.map": "/walknwag.github.io/static/js/main.435c4271.js.map",
-    "453.584da90e.chunk.js.map": "/walknwag.github.io/static/js/453.584da90e.chunk.js.map"
+    "main.css": "/static/css/main.0829381d.css",
+    "main.js": "/static/js/main.8a108eaa.js",
+    "static/js/453.584da90e.chunk.js": "/static/js/453.584da90e.chunk.js",
+    "index.html": "/index.html",
+    "main.0829381d.css.map": "/static/css/main.0829381d.css.map",
+    "main.8a108eaa.js.map": "/static/js/main.8a108eaa.js.map",
+    "453.584da90e.chunk.js.map": "/static/js/453.584da90e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0829381d.css",
-    "static/js/main.435c4271.js"
+    "static/js/main.8a108eaa.js"
   ]
 }
